@@ -191,7 +191,7 @@ width: 40px ;
 @media (min-width:1367px) { .rubrique:hover .sousmenu { max-height: 500%; } }
 .pagesousmenu { 
 		border-top: transparent;
-		border-bottom: 1px solid #000;
+		border-bottom: transparent;
 		width: 100%; 
 		text-align: center; 
 		display: table; 
