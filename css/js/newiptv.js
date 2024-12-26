@@ -152,4 +152,26 @@ const sourceSelect = document.getElementById("sourceSelect");
     // Tự động chọn nguồn đầu tiên và fetch dữ liệu khi mở trang
     sourceSelect.selectedIndex = 0;
     sourceSelect.dispatchEvent(new Event("change"));
+id="rendered-js"
+const sidebar = document.getElementById('sidebar');
+const hamburger = document.querySelector('.hamburger');
+const sideLinks = sidebar.querySelectorAll('a');
+
+function toggleSidebar() {
+  sidebar.classList.toggle('sidebaractive');
+
+}
+
+hamburger.addEventListener('click', toggleSidebar);
+
+sideLinks.forEach(link => {
+  link.addEventListener('click', toggleSidebar);
+
+});
+function togglesubmenu() {
+  if (window.matchMedia("(max-width: 1366px)").matches) {
+    const y = document.querySelectorAll("div.hamburger");
+    y[0].classList.toggle("platevisible");
+  }
+}
 
