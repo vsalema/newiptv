@@ -135,7 +135,7 @@ const sourceSelect = document.getElementById("sourceSelect");
       // Cập nhật trình phát video
       videoPlayer.src({
         src: selectedChannelUrl,
-        type: "application/x-mpegURL"
+        type: ""
       });
       // Lấy kênh đã chọn từ channelSelect
       const selectedChannel = channels.find(channel => channel.url === channelSelect.value);
