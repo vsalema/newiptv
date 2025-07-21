@@ -26,11 +26,11 @@ const sourceSelect = document.getElementById("sourceSelect");
          
           
           if (groupTitleMatch) {
-            currentChannel.category = groupTitleMatch[12];
+            currentChannel.category = groupTitleMatch[1];
           } else {
             currentChannel.category = currentCategory || "Unknown";
           }
-          currentChannel.logo = logoMatch ? logoMatch[12] : "";
+          currentChannel.logo = logoMatch ? logoMatch[1] : "";
         } else if (line.startsWith("http")) {
           currentChannel.url = line;
           channels.push(currentChannel);
