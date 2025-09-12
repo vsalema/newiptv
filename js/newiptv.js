@@ -5,6 +5,7 @@ const sourceSelect = document.getElementById("sourceSelect");
     const categorySelect = document.getElementById("categorySelect");
     const channelSelect = document.getElementById("channelSelect");
     const channelLogo = document.getElementById("channelLogo");
+    const channelLogo2 = document.getElementById("channelLogo2");
     const fileInput = document.getElementById("fileInput");
     const videoPlayer = videojs("player");
     let data = "";
@@ -99,9 +100,11 @@ const sourceSelect = document.getElementById("sourceSelect");
     function clearData() {
       data = "";
       channels = [];
+      channelLogo2.src = "";
       categorySelect.innerHTML = "";
       channelSelect.innerHTML = "";
       channelLogo.src = "";
+      
     }
 
     function countChannelsInCategory(category) {
@@ -142,11 +145,19 @@ const sourceSelect = document.getElementById("sourceSelect");
       // Cập nhật logo kênh từ kênh đã chọn
       if (selectedChannel) {
         channelLogo.src = selectedChannel.logo;
+     channelLogo2.src = selectedChannel.logo;
       } else {
         channelLogo.src = "";
+      channelLogo2.src = "";
       }
     }
-    channelLinkInput.addEventListener("input", () => {
+    
+
+
+
+
+
+channelLinkInput.addEventListener("input", () => {
       playChannel();
     });
     // Tự động chọn nguồn đầu tiên và fetch dữ liệu khi mở trang
