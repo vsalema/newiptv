@@ -34,7 +34,8 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Video.js CSS -->
-    <link href="https://vsalema.github.io/tvpt4/css/tresmin.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <link href="https://vsalema.github.io/tvpt4/css/tresmin.css" rel="stylesheet" />
   <link href="https://vjs.zencdn.net/8.10.0/video-js.cs" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
@@ -128,7 +129,11 @@
         /* Video.js specific styling adjustments for dark mode and responsiveness */
         
         
-        
+        .btn-success {
+background-color: #222 !important;
+  color: #fff;
+  border-color: #28a745;
+  font-size: 12px; 
         
         
     </style>
@@ -148,7 +153,14 @@
     <nav class="hidden-print hidden-xs hidden-sm">
         <!-- Channel List Section -->
         <div class="lg:w-1/4 w-full bg-gray-800 rounded-lg shadow-xl p-4 flex flex-col max-h-[80vh] overflow-y-auto">
-            <h2 class="text-2xl font-bold mb-4 text-center">Content Source</h2>
+            <div id="m3u" class=""><div class=""><form id="form_m3u" class="" onsubmit="if (!window.__cfRLUnblockHandlers) return false; return checklist(this.playlist.value)" action="https://vsalema.github.io/newiptv2/" method="get" data-cf-modified-6184b24e82a652a5468a33a6-=""><h2 class=""><button style="padding: 0 1px;
+  position: relative;
+  margin-left: 45px;
+  margin-top: -20px;
+  border-color: #2563eb;
+  font-size: 15px;padding:0 1px" data-toggle="tooltip" title="Playlist Loader" class="btn btn-success" id="col_elamhad" type="submit" data-loading-text="<i class='fa fa-spinner fa-spin fa-fw' aria-hidden='true'></i>Load M3U">Return list</button></div>
+          
+          
 
             <!-- Mode Toggle -->
             <div class="flex justify-center mb-4">
@@ -169,7 +181,12 @@
                        class="w-full p-3 rounded-md bg-gray-700 text-gray-100 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400">
                 <label for="showGeoLocked" class="flex items-center space-x-2 cursor-pointer text-gray-300">
                     <input type="checkbox" id="showGeoLocked" class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500 bg-gray-700 border-gray-600">
-                    <span>Show Geo-locked Channels</span>
+                    
+                  
+                  
+                  
+                  
+                  <span>Show Geo-locked Channels</span>
                 </label>
             </div>
 
@@ -1130,7 +1147,8 @@ renderContent = function () {
 });
   
   </script>
-</body>
+<script src="https://www.elahmad.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="6184b24e82a652a5468a33a6-|49" defer></script>
+  </body>
 
 </html>
   
