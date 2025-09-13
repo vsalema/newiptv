@@ -8,7 +8,7 @@
 
   <meta name="robots" content="noindex">
 
- 
+  
 
   
   
@@ -18,7 +18,10 @@
   </style>
 
   
-
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-6d8bf8b4b479137260842506acbb12717dace0823c023e08b96360e60b0840d9.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
 </head>
 
 <body>
@@ -36,10 +39,23 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
   <style>
-  .text-center {
+    .rounded-full {
+  border-radius: 0px;
+}
+.w-10 {
+  width: 7.5rem;
+}
+.h-10 {
+  height: 4.5rem;
+} 
+    .mb-4 {
+  margin-bottom: 4rem;
+}
+    .videoPlayer-dimensions.vjs-fluid:not(.vjs-audio-only-mode) {   padding-top: 49%; }
+    .text-center {
   text-align: center;
   position: absolute;
-  margin-top: 10px;
+  margin-top: 31px;
   z-index: 3;
 }
     #primary { width: auto; }
@@ -183,7 +199,7 @@
             <h2 id="current-channel-name" class="text-xl font-bold mb-2 text-center text-gray-300">Select a channel to play</h2>
             
                 <!-- Video.js player element -->
-                <video id="videoPlayer" class="js-video video-js vjs-fluid vjs-big-play-centered" controls preload="auto" data-setup='{}'></video>
+                <video id="videoPlayer" class="js-video video-js vjs-fluid vjs-big-play-centered" controls preload="auto" poster="https://cdn.futura-sciences.com/sources/images/iptv.jpeg" data-setup='{}'></video>
              <div id="video-loading-indicator" class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-75 text-white text-lg font-semibold hidden">
                     Loading video...
                 </div>   
