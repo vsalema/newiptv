@@ -110,15 +110,14 @@ body {
     .btn {
 font-size: 28px;
   }
-   #menu-btn {
+  #menu-btn {
   color: #fff;
   z-index: 3;
-  position: static;
-  left: 0;
-  top: 12%;
+  position: fixed;
+  left: -91px;
+  top: 9px;
   width: 8em;
-  margin-top: -0.9em;
-  margin-left: -1491px;
+  margin-top: 0.1em;
 }
 
     
@@ -221,7 +220,7 @@ background-color: #222 !important;
 <body style="background-color: black;">
   <!-- Side-Nav -->
   <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar" style="z-index: 3;">
-    <div class="lg:w-1/4 w-full bg-gray-800 rounded-lg shadow-xl p-4 flex flex-col max-h-[95vh] overflow-y-auto">
+    <div class="lg:w-1/4 w-full bg-gray-800 rounded-lg shadow-xl p-4 flex flex-col max-h-[95vh] overflow-y-auto"><a class="btn border-0" id="menu-btn"><i class="bx bx-menu"></i></a>
             <h2 class="text-2xl font-bold mb-4 text-center"></h2>
 
             
@@ -305,9 +304,7 @@ background-color: #222 !important;
   <!-- Main Wrapper -->
   <div class="p-1 my-container active-cont">
     <!-- Top Nav -->
-    <nav class="navbar top-navbar navbar-light bg-light px-5">
-      <a class="btn border-0" id="menu-btn"><i class="bx bx-menu"></i></a>
-    </nav>
+    
     <!--End Top Nav -->
  <h2 id="current-channel-name" class="text-xl font-bold mb-2 text-center text-gray-300">Select a channel to play</h2>
             
