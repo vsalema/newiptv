@@ -121,7 +121,21 @@ font-size: 28px;
 }
 
     
-    .videoPlayer-dimensions.vjs-fluid:not(.vjs-audio-only-mode) {   padding-top: 49%; }
+#player {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.player-dimensions.vjs-fluid:not(.vjs-audio-only-mode) {
+  padding-top: 56.25%;
+}
+
+.video-js.vjs-fluid, {
+  max-width: 100%;
+}
     
     .text-center {
   position: absolute;
