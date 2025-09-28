@@ -74,7 +74,7 @@ input[type="text"] {
   margin: 0px;
     margin-top: 0px;
     margin-left: 0px;
-  width: 263px;
+  width: 215px;
   border-radius: 5px;
   border: none;
   font-size: 11px;
@@ -350,4 +350,5 @@ body{
     width: 60px;
   }
 }
+
 
